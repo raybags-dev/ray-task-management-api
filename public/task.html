@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://github.com/raybags-web-dev/image_base/blob/master/images/logo/new_logoo2.png?raw=true" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Edit Task</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="single-task-form">
+            <h4>Edit Task</h4>
+            <div class="form-control">
+                <label>Task ID</label>
+                <p class="task-edit-id"></p>
+            </div>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="task-edit-name" />
+            </div>
+            <div class="form-control">
+                <label for="completed">completed</label>
+                <input type="checkbox" name="completed" class="task-edit-completed" />
+            </div>
+            <button type="submit" class="block btn task-edit-btn">Save task</button>
+            <div class="form-alert"></div>
+        </form>
+        <a href="index.html" class="btn back-link">All tasks</a>
+    </div>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js -->
+    <script src="./edit-task.js"></script>
+</body>
+
+</html>
